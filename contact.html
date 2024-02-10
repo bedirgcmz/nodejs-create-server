@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Server</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: bisque;
+      }
+      header {
+        height: 60px;
+        padding: 0 20px;
+        font-size: 1.3rem;
+        background-color: teal;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        padding: 20px;
+        text-align: center;
+        color: #3e3e3e;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+      li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 3px 6px;
+        border: 1px solid teal;
+        border-radius: 8px;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          margin-bottom: 16px;
+        }
+      }
+      form {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: #fff;
+        border-radius: 12px;
+        label {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>Build Server </span>
+      <nav>
+        <ul>
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/about">About</a></li>
+          <li><a href="http://localhost:3000/contact">Contact</a></li>
+          <li><a href="http://localhost:3000/login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to Contact Page</h1>
+    <br />
+    <br />
+    <div class="contact">
+      <h3>Contact with us!</h3>
+      <form action="">
+        <label for="">
+          Your name
+          <input type="text" name="name" />
+        </label>
+        <label for="">
+          Your email
+          <input type="email" name="name" />
+        </label>
+        <label for="">
+          Your message
+          <textarea name="message" rows="3"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

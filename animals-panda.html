@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Server</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 60px;
+        padding: 0 20px;
+        font-size: 1.3rem;
+        background-color: teal;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        padding: 20px;
+        text-align: center;
+        color: #3e3e3e;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+      li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 3px 6px;
+        border: 1px solid teal;
+        border-radius: 8px;
+      }
+      div {
+        padding: 20px;
+        text-align: center;
+      }
+      img {
+        width: 300px;
+      }
+      .animals a {
+        margin: 12px 0;
+        padding: 4px 8px;
+        border: 1px solid grey;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+        color: gray;
+      }
+      .animals a:hover {
+        background-color: gray;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>Build Server </span>
+      <nav>
+        <ul>
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/about">About</a></li>
+          <li><a href="http://localhost:3000/contact">Contact</a></li>
+          <li><a href="http://localhost:3000/login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to Home Page</h1>
+    <br />
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum provident adipisci
+      illum ullam? Sed, assumenda! Atque, velit dolor quidem architecto totam assumenda
+      exercitationem, quo consectetur quisquam nam facilis reiciendis?
+    </div>
+    <br />
+    <div>
+      <img
+        class="img"
+        src="https://www.timeforkids.com/wp-content/uploads/2023/11/G2_231208_TianTian.jpg?w=1024"
+        alt=""
+      />
+      <div class="animals">
+        <a href="http://localhost:3000/?kind=animals&name=wolf">View Wolf</a>
+        <a href="http://localhost:3000/?kind=animals&name=panda">View Panda</a>
+        <a href="http://localhost:3000/">Go Back</a>
+      </div>
+    </div>
+  </body>
+</html>
