@@ -2,49 +2,6 @@ const http = require("http");
 const url = require("url");
 const fs = require("fs");
 
-// /** Exercise 3 */
-// // create server
-// const server = http.createServer((request, response) => {
-//   // Process requests
-//   response.writeHead(200, { "Content-Type": "text/html" });
-//   let message;
-//   if (request.url === `/about`) {
-//     message = `<h1>Hi Bedir, Here is About page</h1>`;
-//   } else {
-//     message = `<h1>Hi Bedir, Here is home page</h1>`;
-//   }
-//   response.end(message);
-// });
-
-// /** Exercise 4 */
-// // create server
-
-// const server = http.createServer((request, response) => {
-//   // Process requests
-//   response.writeHead(200, { "Content-Type": "text/html" });
-//   let message;
-
-//   // URL'yi analiz et
-//   const parsedUrl = url.parse(request.url, true);
-//   // Analiz edilmiş URL'den sorgu parametrelerine eriş
-//   const queries = parsedUrl.query;
-
-//   if (parsedUrl.pathname === "/about") {
-//     if (queries.location === "stockholm") {
-//       message = `<p>You reach to <b>Stockholm</b> location</p>`;
-//     } else {
-//       message = `<p>Don't find <b>${queries.location}</b> About</p>`;
-//     }
-//   } else if (parsedUrl.pathname === "/") {
-//     message = `<h1>Hi Bedir, Here is home page</h1>`;
-//   }
-
-//   response.end(message);
-// });
-
-/** Exercise 5 */
-// create server
-
 const server = http.createServer((request, response) => {
   // URL'yi analiz et
   const parsedUrl = url.parse(request.url, true);
@@ -107,7 +64,7 @@ const server = http.createServer((request, response) => {
       }
     } else {
       //if no queries
-      fs.readFile("home.html", (err, data) => {
+      fs.readFile("index.html", (err, data) => {
         if (err) {
           response.writeHead(500);
           return response.end("There is a problem on the server");
